@@ -77,6 +77,7 @@ public class Login extends Base {
 		}catch(Exception e) {
 			
 			e.printStackTrace();
+			System.out.println(e);
 			
 		}
 		
