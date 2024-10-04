@@ -24,11 +24,11 @@ public class Base {
 	public WebDriver openBrowser(String browserName) throws IOException {
 		
 		prop = new Properties();
-		File file = new File("src\\test\\resources\\data.properties");
+		File file = new File("src\\test\\resources\\data.properties");// File Path
 		FileInputStream fis = new FileInputStream(file);
 		prop.load(fis);
 		
-		if(browserName.equalsIgnoreCase("chrome")) {
+		if(browserName.equalsIgnoreCase("chrome")) {//Chrome browser
 			
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
