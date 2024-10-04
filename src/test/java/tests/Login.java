@@ -38,7 +38,7 @@ public class Login extends Base {
 			throw new SkipException("Skipping the test as the runmode is set to N");
 			
 		}
-		
+		//Launching Browser
 		driver = openBrowser(hMap.get("Browser"));
         HomePage homePage = new HomePage(driver);
         homePage.clickOnMyAccountDropMenu();
