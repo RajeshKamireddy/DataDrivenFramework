@@ -24,21 +24,21 @@ public class Base {
 	public WebDriver openBrowser(String browserName) throws IOException {
 		
 		prop = new Properties();
-		File file = new File("src\\test\\resources\\data.properties");// File Path
+		File file = new File("src\\test\\resources\\data.properties");
 		FileInputStream fis = new FileInputStream(file);
 		prop.load(fis);
 		
-		if(browserName.equalsIgnoreCase("chrome")) {//Chrome browser
+		if(browserName.equalsIgnoreCase("chrome")) {
 			
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			
-		}else if(browserName.equalsIgnoreCase("firefox")) {//Firefox browser
+		}else if(browserName.equalsIgnoreCase("firefox")) {
 			
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			
-		}else if(browserName.equalsIgnoreCase("edge")) {//edge browser
+		}else if(browserName.equalsIgnoreCase("edge")) {
 			
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
