@@ -33,12 +33,12 @@ public class Base {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			
-		}else if(browserName.equalsIgnoreCase("firefox")) {
+		}else if(browserName.equalsIgnoreCase("firefox")) {//Browser-Firefox
 			
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 			
-		}else if(browserName.equalsIgnoreCase("edge")) {
+		}else if(browserName.equalsIgnoreCase("edge")) {//Browser-Edge
 			
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
